@@ -1,0 +1,43 @@
+<circuit version="1.1.0-SR2" rev="260312" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="Resistor" CircId="Resistor-1" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-272,-140" rotation="0" hflip="1" vflip="1" label="Resistor-1" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="100 Ω" />
+
+<item itemtype="Subcircuit" CircId="Uno-2" mainComp="false" Show_id="true" Show_Val="false" Pos="-156,-236" rotation="0" hflip="1" vflip="1" label="Uno-2" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Logic_Symbol="false">
+<mainCompProps MainCompId="mega328-109" Frequency="16 MHz" Program="../../Bureau/Labs/Arduino/sketch_session_5/build/arduino.avr.uno/sketch_session_5.ino.hex" Auto_Load="false" saveEepr="true" MainMcu="true" SerialMon="1" />
+</item>
+
+<item itemtype="Led" CircId="Led-3" mainComp="false" Show_id="false" Show_Val="false" Pos="-204,-140" rotation="-180" hflip="1" vflip="1" label="Led-3" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Yellow" Grounded="false" Threshold="2.4 V" MaxCurrent="30 mA" Resistance="0.6 Ω" />
+
+<item itemtype="Rail" CircId="Rail-4" mainComp="false" ShowProp="Voltage" Show_id="false" Show_Val="true" Pos="-252,-52" rotation="-90" hflip="1" vflip="1" label="Rail-4" idLabPos="-5,-10" labelrot="-90" valLabPos="-12,6" valLabRot="-90" Voltage="5 V" />
+
+<item itemtype="Ground" CircId="Ground-5" mainComp="false" Show_id="false" Show_Val="false" Pos="-308,-104" rotation="0" hflip="1" vflip="1" label="Ground-5" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Push" CircId="Push-6" mainComp="false" Show_id="false" Show_Val="false" Pos="-208,-92" rotation="0" hflip="1" vflip="1" label="Push-6" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Norm_Close="false" Poles="1" />
+
+<item itemtype="Potentiometer" CircId="Potentiometer-7" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-280,-216" rotation="0" hflip="1" vflip="1" label="Potentiometer-7" idLabPos="-16,-40" labelrot="0" valLabPos="15,-20" valLabRot="0" Resistance="1 kΩ" Value_Ohm="326 Ω" Slider="false" Scale="1" />
+
+<item itemtype="Node" CircId="Node-11" mainComp="false" Pos="-252,-68" />
+
+<item itemtype="Node" CircId="Node-12" mainComp="false" Pos="-308,-120" />
+
+<item itemtype="Connector" uid="Connector-1" startpinid="Led-3-lPin" endpinid="Uno-2-9" pointList="-188,-140,-148,-140" />
+
+<item itemtype="Connector" uid="Connector-4" startpinid="Push-6-switch0pinN" endpinid="Uno-2-12" pointList="-192,-92,-176,-92,-176,-116,-148,-116" />
+
+<item itemtype="Connector" uid="Connector-8" startpinid="Potentiometer-7-PinM" endpinid="Uno-2-A0" pointList="-280,-200,-280,-192,-192,-192,-192,-260,24,-260,24,-180,-4,-180" />
+
+<item itemtype="Connector" uid="Connector-19" startpinid="Led-3-rPin" endpinid="Resistor-1-rPin" pointList="-220,-140,-256,-140" />
+
+<item itemtype="Connector" uid="Connector-20" startpinid="Potentiometer-7-PinB" endpinid="Node-11-1" pointList="-264,-216,-248,-216,-248,-104,-268,-104,-268,-68,-252,-68" />
+
+<item itemtype="Connector" uid="Connector-21" startpinid="Push-6-pinP0" endpinid="Node-11-0" pointList="-224,-92,-252,-92,-252,-68" />
+
+<item itemtype="Connector" uid="Connector-22" startpinid="Node-11-2" endpinid="Rail-4-outnod" pointList="-252,-68,-252,-68" />
+
+<item itemtype="Connector" uid="Connector-23" startpinid="Potentiometer-7-PinA" endpinid="Node-12-1" pointList="-296,-216,-296,-160,-324,-160,-324,-120,-308,-120" />
+
+<item itemtype="Connector" uid="Connector-24" startpinid="Resistor-1-lPin" endpinid="Node-12-0" pointList="-288,-140,-308,-140,-308,-120" />
+
+<item itemtype="Connector" uid="Connector-25" startpinid="Node-12-2" endpinid="Ground-5-Gnd" pointList="-308,-120,-308,-120" />
+
+</circuit>
