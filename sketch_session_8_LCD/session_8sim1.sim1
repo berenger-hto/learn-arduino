@@ -1,0 +1,25 @@
+<circuit version="1.1.0-SR2" rev="260312" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="Subcircuit" CircId="Uno-1" mainComp="false" Show_id="true" Show_Val="false" Pos="-184,-308" rotation="0" hflip="1" vflip="1" label="Uno-1" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Logic_Symbol="false">
+<mainCompProps MainCompId="mega328-109" Frequency="16 MHz" Program="build/arduino.avr.uno/sketch_session_8_LCD.ino.hex" Auto_Load="false" saveEepr="true" MainMcu="true" SerialMon="-1" />
+</item>
+
+<item itemtype="Ground" CircId="Ground-3" mainComp="false" Show_id="false" Show_Val="false" Pos="64,-148" rotation="0" hflip="1" vflip="1" label="Ground-3" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Aip31068_i2c" CircId="Aip31068_i2c-13" mainComp="false" ShowProp="Control_Code" Show_id="true" Show_Val="true" Pos="64,-276" rotation="0" hflip="1" vflip="1" label="Aip31068_i2c-13" idLabPos="70,-82" labelrot="0" valLabPos="-16,20" valLabRot="0" Rows="2" Cols="16" Control_Code="62" Frequency="100 _kHz" />
+
+<item itemtype="Potentiometer" CircId="Potentiometer-14" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="84,-196" rotation="0" hflip="1" vflip="1" label="Potentiometer-14" idLabPos="-16,-40" labelrot="0" valLabPos="15,-20" valLabRot="0" Resistance="1 kΩ" Value_Ohm="147 Ω" Slider="false" Scale="1" />
+
+<item itemtype="Rail" CircId="Rail-2" mainComp="false" ShowProp="Voltage" Show_id="false" Show_Val="true" Pos="124,-156" rotation="-90" hflip="1" vflip="1" label="Rail-2" idLabPos="-5,-10" labelrot="-90" valLabPos="-12,6" valLabRot="-90" Voltage="5 V" />
+
+<item itemtype="Connector" uid="Connector-4" startpinid="Potentiometer-14-PinM" endpinid="Uno-1-A0" pointList="84,-180,12,-180,12,-252,-32,-252" />
+
+<item itemtype="Connector" uid="Connector-8" startpinid="Potentiometer-14-PinA" endpinid="Ground-3-Gnd" pointList="68,-196,64,-196,64,-164" />
+
+<item itemtype="Connector" uid="Connector-9" startpinid="Potentiometer-14-PinB" endpinid="Rail-2-outnod" pointList="100,-196,124,-196,124,-172" />
+
+<item itemtype="Connector" uid="Connector-14" startpinid="Aip31068_i2c-13PinSDA" endpinid="Uno-1-A4" pointList="80,-268,4,-268,4,-284,-32,-284" />
+
+<item itemtype="Connector" uid="Connector-15" startpinid="Aip31068_i2c-13PinSCL" endpinid="Uno-1-A5" pointList="88,-268,88,-260,20,-260,20,-292,-32,-292" />
+
+</circuit>
